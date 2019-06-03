@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  {{> head}}
+  <body class="body-main">
+    <div class="title-container">
+      <div class="title">
+        Minimum Spanning Tree Demonstration
+      </div>
+      <div class="description">
+        Visualization of <a href="https://en.wikipedia.org/wiki/Prim%27s_algorithm">Prim's algorithm</a> and <a href="https://en.wikipedia.org/wiki/Kruskal%27s_algorithm">Kruskal's algorithm</a> to find the <a href="https://en.wikipedia.org/wiki/Minimum_spanning_tree">minimum spanning tree</a> of a graph.
+      </div>
+      <div class="link">
+        Made by Kotenko Yaroslav</a>.
+      </div>
+    </div>
+
+    <div class="details-container">
+      <div class="description">
+        Click anywhere to create a point.<br><br>
+        <select id="select-algo" class="select-algo" name="algo">
+          <option value="1">Prim's algorithm</option>
+          <option value="2">Kruskal's algorithm</option>
+        </select>
+        <br>
+        <button id="btn-compute" class="btn-main" type="button" name="compute">Compute</button>
+        <button id="btn-reset" class="btn-main" type="button" name="reset">Reset</button>
+      </div>
+    </div>
+
+    <canvas id="canvas" class="main-canvas" resize></canvas>
+
+    <script type="text/javascript" src="js-min/constants.js" canvas="canvas"></script>
+    <script type="text/javascript" src="js-min/vertex.js" canvas="canvas"></script>
+    <script type="text/javascript" src="js-min/edge.js" canvas="canvas"></script>
+    <script type="text/javascript" src="js-min/minheap.js" canvas="canvas"></script>
+    <script type="text/javascript" src="js-min/unionfind.js" canvas="canvas"></script>
+    <script type="text/paperscript" src="js-min/script.js" canvas="canvas"></script>
+  </body>
+</html>

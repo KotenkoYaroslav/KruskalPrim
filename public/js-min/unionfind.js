@@ -1,0 +1,1 @@
+function UnionFind(i){this.id=[],this.size=[],this.count=i;for(var s=0;s<i;s++)this.id[s]=s,this.size[s]=1}UnionFind.prototype={find:function(i){for(;i!=this.id[i];)i=this.id[i];return i},union:function(i,s){var t=this.find(i),n=this.find(s);t!=n&&(this.size[t]<this.size[n]?(this.id[t]=n,this.size[n]+=this.size[t]):(this.id[n]=t,this.size[t]+=this.size[n]),this.count--)}};

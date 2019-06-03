@@ -1,0 +1,86 @@
+*:focus {
+  outline: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.body-main {
+  background-color: #000;
+}
+
+.title-container {
+  position: absolute;
+  width: 25em;
+  left: 2em;
+  bottom: 2em;
+}
+
+.details-container {
+  position: absolute;
+  width: auto;
+  height: auto;
+  right: 2em;
+  bottom: 2em;
+}
+
+@media all and (max-width: 605px) {
+  .details-container {
+    position: absolute;
+    width: auto;
+    height: 8em;
+    top: 1em;
+  }
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  font-weight: 100;
+  font-style: normal;
+  color: #fff;
+}
+
+.description, .link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  font-style: normal;
+  color: #ccc;
+}
+
+.description a:hover, .link a:hover {
+  text-decoration: none;
+}
+
+.btn-main {
+  background-color: #ADD8E6;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-main:hover {
+  background-color: #8aacb8;
+}
+
+.btn-main:active {
+  background-color: #67818a;
+}
+
+.main-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.select-algo {
+  margin-bottom: 1em;
+  border: none;
+  color: #000;
+  width: 15em;
+  cursor: pointer;
+}

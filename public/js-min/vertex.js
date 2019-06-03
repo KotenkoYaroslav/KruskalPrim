@@ -1,0 +1,1 @@
+function Vertex(t,i){this.x=t,this.y=i,this.adj=[]}Vertex.prototype={distance:function(t){return Math.sqrt(Math.pow(this.y-t.y,2)+Math.pow(this.x-t.x,2))},equals:function(t){return this.x==t.x&&this.y==t.y},addToAdj:function(t){this.adj.push(t)},getAdj:function(){return this.adj},key:function(){return this.x+","+this.y}};
